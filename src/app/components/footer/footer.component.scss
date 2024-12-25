@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  padding: 0 1em;
+  height: 2.5em;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--mat-sys-outline);
+  background-color: var(--mat-sys-primary);
+  color: var(--mat-sys-on-primary);
+
+  mat-icon {
+    color: var(--mat-sys-on-primary);
+  }
+}

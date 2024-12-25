@@ -1,0 +1,11 @@
+{
+  "title": "JSON Form Builder",
+  "banner": {
+    "header": "Créez des formulaires dynamiques à partir de fichiers JSON et collectez facilement les résultats au format JSON",
+    "sub_header": "Concevez, utilisez et récupérez des formulaires sans effort avec la précision pilotée par JSON.",
+    "button": "Voir d'autres projets"
+  },
+  "footer": {
+    "right": "© Crée et developpé par Daniel Vergara"
+  }
+}

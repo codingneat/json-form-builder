@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+mat-icon {
+  font-size: 2.2rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  display: flex;
+
+  &.large-logo {
+    font-size: 15.25rem;
+    height: 15.25rem;
+    width: 15.25rem;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url('/background.jpg');
+    animation: bg-animation 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+  }
+
+  @keyframes bg-animation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  mat-icon {
+    font-size: 3.125rem;
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+}

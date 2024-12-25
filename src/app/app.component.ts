@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import { JsonFormBuilderComponent } from '@/components/json-form-builder/json-form-builder.component';
+import { LayoutComponent } from '@/core/layout/layout.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [LayoutComponent, JsonFormBuilderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'json-form-builder';

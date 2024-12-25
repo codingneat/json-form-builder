@@ -1,0 +1,13 @@
+<div class="form-input" [class.form-input__error]="!inputValid">
+  <ngx-codemirror
+    [(ngModel)]="prettyInput"
+    (ngModelChange)="change($event)"
+    [options]="{
+      lineWrapping: true,
+      lineNumbers: false,
+      lint: true,
+      mode: 'application/json',
+      theme: 'eclipse',
+      scrollbarStyle: 'null',
+    }"></ngx-codemirror>
+</div>

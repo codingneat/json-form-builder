@@ -1,0 +1,70 @@
+@use 'codemirror/lib/codemirror';
+@use 'codemirror/theme/eclipse';
+@use 'codemirror/addon/lint/lint';
+
+.json-form-builder {
+  .CodeMirror {
+    border: 1px solid var(--mat-sys-outline);
+    color: var(--mat-sys-primary);
+    background-color: var(--mat-sys-surface);
+    zoom: 1;
+    outline: none;
+    height: 600px;
+    font-size: var(--mat-sys-body-large);
+    line-height: var(--mat-sys-body-large-line-height);
+
+    &-scroll {
+      margin-bottom: 0;
+      margin-right: 0;
+      padding-bottom: 0;
+      overflow-x: hidden !important;
+    }
+  }
+
+  .cm-s-eclipse span.cm-string {
+    color: var(--mat-sys-primary);
+  }
+
+  .form-input__error {
+    .CodeMirror {
+      border: 1px solid var(--mat-sys-error);
+      background: var(--mat-sys-error-container);
+    }
+
+    .cm-s-eclipse span.cm-string {
+      color: var(--mat-sys-on-error-container);
+    }
+  }
+
+  /* .CodeMirror {
+    .cm-jwt-dot {
+      color: #000;
+    }
+
+    .cm-jwt-header {
+      color: #fb015b;
+    }
+
+    .cm-jwt-payload {
+      color: #d63aff;
+    }
+
+    .cm-jwt-signature {
+      color: #00b9f1;
+    }
+  } */
+}
+
+/* .jwt-playground .output .jwt-header .text-line a,
+.jwt-playground .output .jwt-header .CodeMirror * {
+  color: #fb015b;
+}
+.jwt-playground .output .jwt-payload .text-line a,
+.jwt-playground .output .jwt-payload .CodeMirror * {
+  color: #d63aff;
+}
+.jwt-playground .output .jwt-signature .text-line a,
+.jwt-playground .output .jwt-signature pre {
+  color: #00b9f1;
+}
+ */

@@ -1,0 +1,35 @@
+.json-form-builder {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 1rem;
+  margin: auto;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    & {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      width: 970px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    & {
+      width: 1170px;
+    }
+  }
+
+  &__column {
+    width: 50%;
+  }
+
+  &__textarea {
+    width: 100%;
+  }
+}

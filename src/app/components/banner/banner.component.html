@@ -1,0 +1,15 @@
+<mat-grid-list cols="1" color="primary">
+  <section class="banner-jwt">
+    <div class="banner-jwt__container">
+      <app-logo size="large"></app-logo>
+      <ng-container *transloco="let t">
+        <p>
+          {{ t('banner.header') }}
+        </p>
+        <p>{{ t('banner.sub_header') }}</p>
+
+        <button mat-raised-button class="banner-jwt__button">{{ t('banner.button') }}</button>
+      </ng-container>
+    </div>
+  </section>
+</mat-grid-list>

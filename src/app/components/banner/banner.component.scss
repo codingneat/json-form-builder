@@ -1,0 +1,35 @@
+.banner-jwt {
+  text-align: center;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  font: var(--mat-sys-body-large);
+  background: var(--mat-sys-primary);
+  color: var(--mat-sys-on-primary);
+
+  &__container {
+    padding: 0.5em 2.5em 1rem 2.5rem;
+  }
+
+  &__button {
+    padding: 1.1em;
+    font: var(--mat-sys-body-large);
+  }
+
+  @media (min-width: 768px) {
+    & {
+      padding: 0.75em 0 1em;
+      font: var(--mat-sys-headline-medium);
+    }
+
+    &__button {
+      font: var(--mat-sys-headline-medium);
+    }
+  }
+
+  @media (min-width: 992px) {
+    & {
+      padding: 1.2em 0 1.75em;
+      font: var(--mat-sys-headline-large);
+    }
+  }
+}
