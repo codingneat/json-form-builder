@@ -1,14 +1,16 @@
 <div class="json-form-builder">
-  <div class="json-form-builder__column">
+  <div class="json-form-builder__column" [ngClass]="{ 'hide-block': !showFormInput }">
     <app-form-input [formInput]="formInput" (changeFormInput)="onChangeFormInput($event)"> </app-form-input>
-
-    <!--    <pre><code class="language-javascript code">{{pretty}} </code></pre>
-    <textarea
-      className="textarea"
-      [(ngModel)]="pretty"
-      [ngModelOptions]="{ standalone: true }"
-      placeholder="Ex. It makes me feel..."></textarea> -->
   </div>
 
-  <div class="json-form-builder__column">dd</div>
+  <div class="json-form-builder__column">
+    <button mat-fab extended *ngIf="!showFormInput" (click)="resetShowFormInput()">
+      <mat-icon>arrow_back</mat-icon> Back to Input Field
+    </button>
+    <app-form-builder [field]="formSchema" (submitForm)="onSubmitForm($event)"> </app-form-builder>
+  </div>
+
+  <div class="json-form-builder__column" [ngClass]="{ 'hide-block': showFormInput }">
+    <app-form-output [formOutput]="formOutput"> </app-form-output>
+  </div>
 </div>

@@ -9,7 +9,8 @@
     background-color: var(--mat-sys-surface);
     zoom: 1;
     outline: none;
-    height: 600px;
+    min-height: 600px;
+    height: 100%;
     font-size: var(--mat-sys-body-large);
     line-height: var(--mat-sys-body-large-line-height);
 
@@ -18,11 +19,16 @@
       margin-right: 0;
       padding-bottom: 0;
       overflow-x: hidden !important;
+      min-height: 600px;
     }
   }
 
   .cm-s-eclipse span.cm-string {
     color: var(--mat-sys-primary);
+  }
+
+  .form-input {
+    height: 100%;
   }
 
   .form-input__error {

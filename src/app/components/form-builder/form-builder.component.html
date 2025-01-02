@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" #formDirective="ngForm">
+  <div *ngIf="field">
+    <formly-form [form]="form" [model]="model" [options]="options" [fields]="[field]"> </formly-form>
+  </div>
+
+  <button mat-flat-button type="submit">Submit</button> &nbsp;
+
+  <button mat-stroked-button type="reset">Reset</button>
+</form>

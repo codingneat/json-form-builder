@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/TypeName",
+  "definitions": {
+    "TypeName": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "height": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "string"
+        },
+        "candy": {
+          "type": "string"
+        },
+        "candy_count": {
+          "type": "integer"
+        },
+        "egg": {
+          "type": "string"
+        },
+        "spawn_chance": {
+          "type": "number"
+        },
+        "avg_spawns": {
+          "type": "integer"
+        },
+        "spawn_time": {
+          "type": "string"
+        },
+        "multipliers": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "weaknesses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_evolution": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NextEvolution"
+          }
+        }
+      },
+      "required": [
+        "avg_spawns",
+        "candy",
+        "candy_count",
+        "egg",
+        "height",
+        "id",
+        "multipliers",
+        "name",
+        "next_evolution",
+        "num",
+        "spawn_chance",
+        "spawn_time",
+        "type",
+        "weaknesses",
+        "weight"
+      ],
+      "title": "TypeName"
+    },
+    "NextEvolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "num": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": ["name", "num"],
+      "title": "NextEvolution"
+    }
+  }
+}
